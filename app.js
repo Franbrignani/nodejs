@@ -22,6 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+//RUTAS DE LA PAGINA
 app.get('/home', function(req, res){
   res.send('Inicio de la web')
 })
